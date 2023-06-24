@@ -1,0 +1,563 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1, h2, h3, h4, h5, h6, a, ul, ol, li, span{
+    line-height: 0.80;
+}
+span{
+    display: block;
+}
+ul, ol{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+a:hover {
+    color: none;
+}
+/* ============== Common CSS ==================== */
+body{
+    font-family: 'Roboto Flex', sans-serif;
+}
+.container{
+    max-width: 1170px;
+}
+:root{
+    --title_size: 22px;
+    --span_color: #001e00;
+}
+
+/* =========== Link =============== */
+.demo{
+    padding: 26px 6px;
+}
+.demoContent{
+    color: chartreuse;
+    background-color: blueviolet;
+    padding: 10px 30px;
+    border-radius: 25px;
+    opacity: .05;
+    transition: all linear 0.3s;
+}
+.demoContent:hover{
+    opacity: 1;
+    color: #fff;
+    padding: 10px 30px;
+    border-radius: 25px;
+    background-color: blueviolet;
+}
+/* =========== Link =============== */
+
+/* ================ NAV ================= */
+#navSection{
+    width: 100%;
+    padding-bottom: 10px;
+    border-bottom: 1px solid gainsboro;
+}
+.logoBox{
+    width: 82px;
+    height: 23px;
+}
+.searchRadius{
+    background-color: transparent;
+    border: transparent;
+    border-radius: 25px;
+    transition: all linear 0.3s;
+}
+.searchRadius:hover{
+    background-color: #f7faf7;    
+}
+.searchRadius:hover.dropdown::before{
+    background-color: #f7faf7;    
+}
+.dropdown::before{
+    content: "";
+    width: 1px;
+    height: 50%;
+    background-color: #c3cac3;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: all linear 0.3s;
+}
+.projBtn{
+    border-radius: 25px;
+    transition: all linear 0.3s;
+}
+.projBtn:hover{
+    background-color: #f7faf7;
+}
+
+.dropdown:hover::before{
+    background-color: transparent;
+}
+.dropdown-menu[data-bs-popper] {
+    top: 100%;
+    left: -45px;
+    margin-top: .125rem;
+    box-shadow: 0 0 20px -7px #878787;
+    border-radius: 8px;
+}
+.dropdown-menu {
+    border: 0;
+}
+.dropTitle{
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 500;
+    color: #5e6d55;
+}
+.dorpPara{
+    font-size: 11px;
+    line-height: 14px;
+    font-weight: 400;
+    color: #9aaa97;
+}
+.nav-link:focus, .nav-link:hover {
+    color: #001e00;
+}
+.dropIcon{
+    font-size: 30px;
+    color: #9aaa97;
+    margin-top: 5px;
+}
+
+.loginBtn:hover{
+    cursor: pointer;
+}
+.textColor{
+    width: 100px;
+    height: 40px;
+    color: #fff;
+    background-color: #108a00;
+    border-radius: 25px;
+}
+.textColor:hover{
+    background-color: #14a800;
+}
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+    color: #14a800;
+}
+
+.searchBar{
+    height: 40px;
+    border: 2px solid #e4ebe4;
+    border-radius: 25px;
+}
+.searchBar:hover{
+    background-color: #e4ebe4;
+}
+/* ======================= Banner =================== */
+#banner{
+    margin-top: 100px;
+}.bannerTitle{
+    font-size: 40px;
+    line-height: 1.3;
+    font-weight:700;
+    color: #001e00;
+}
+.profilePicBox{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.profileName{
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 500;
+    color: #108a00;
+}
+.profileStar{
+    color: #108a00;
+}
+.profileReviewnumber{
+    color: rgba(0, 0, 0, 0.6);
+}
+.profileReview{
+    color: #108a00;
+}
+.bannerImageBox{
+    width: 750px;
+    border-radius: 20px;
+}
+.pricingSection{
+    width: 366px;
+    border-radius: 20px;
+}
+.pricingHead2{
+    font-size: 18px;
+    line-height: 1.3;
+    font-weight: 600;
+    color: #0b0b0b;
+}
+.pricingPara{
+    font-size: 14px;
+    line-height: 1.3;
+    font-weight: 400;
+    color: #001e00;
+}
+.pricingItemLestText{
+    font-size: 14px;
+    line-height: 1.8;
+    font-weight: 400;
+    color: #001e00;
+}
+.delliveryTime{
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 500;
+    color: #001e00;
+}
+.delliveryTime i{
+    margin-right: 7px;
+}
+.deliveryPara{
+    font-size: 14px;
+    line-height: 1.5;
+    font-weight: 400;
+    color: #959a95;
+    margin-left: 25px;
+}
+#banner .textColor{
+    width: 330px;
+}
+.bannerBorderColor{
+    width: 330px;
+    background-color: none;
+    border: 1px solid #108a00;
+    border-radius: 25px;
+}
+.projectDetailsTitle{
+    font-size: 22px;
+    line-height: 1.3;
+    font-weight: 600;
+    color: #001e00;
+    text-transform: capitalize;
+}
+.serviceOfferMain{
+    font-size: 20px;
+    line-height: 1.8;
+    font-weight: 600;
+    color: #001e00;
+}
+.serviceOffer{
+    font-size: 15px;
+    line-height: 1.3;
+    font-weight: 500;
+    color: #001e00;
+    list-style-type: circle;
+}
+
+.table {
+    --bs-table-bg: transparent;
+    --bs-table-accent-bg: transparent;
+    --bs-table-striped-color: #212529;
+    --bs-table-striped-bg: #f2f7f2;
+    --bs-table-striped-bg: #f2f7f2;
+    --bs-table-active-color: #212529;
+    --bs-table-active-bg: rgba(0, 0, 0, 0.1);
+    --bs-table-hover-color: #212529;
+    --bs-table-hover-bg: rgba(0, 0, 0, 0.075);
+    width: 100%;
+    margin-bottom: 1rem;
+    color: #212529;
+    vertical-align: top;
+    border-color: #dee2e6;
+    border: 1px solid gainsboro;
+    border-radius: 15px;
+}
+.accordion-button:focus {
+    z-index: 3;
+    /* border-color: #86b7fe; */
+    border-color: none;
+    outline: 0;
+    /* box-shadow: 0 0 0 .25rem rgba(13,110,253,.25); */
+    box-shadow:none;
+}
+.accordion-button:not(.collapsed) {
+    color: #0c63e4;
+    background-color: none;
+    box-shadow: none;
+}
+.accordion-button:not(.collapsed) {
+    /* color: #0c63e4; */
+    background-color: none;
+    /* box-shadow: inset 0 -1px 0 rgba(0,0,0,.125); */
+}
+.accordion-button:not(.collapsed) {
+    color: #0c63e4;
+    background-color: none;
+    box-shadow: inset 0 -1px 0 rgba(0,0,0,.125);
+}
+
+code{
+    font-size: 16px;
+    font-weight: 600;
+}
+.faqTitle{
+    font-size: 22px;
+    line-height: 1.8;
+    font-weight: 500;
+    color: #001e00;
+    text-transform: capitalize;
+}
+
+/* ======================== Project Review Summary ========================== */
+.pRevSuTitle{
+    font-size: 20px;
+    line-height: 1.8;
+    font-weight: 600;
+    color: #001e00;
+    text-transform: capitalize;
+}
+.pRevSuTitle i{
+    margin-right: 15px;
+}
+.starsLink{
+    font-size: 16px;
+    font-weight: 600;
+    color: #0b9d37;
+    text-transform: capitalize;
+}
+.bar{
+    width: 100%;
+    height: 5px;
+    background-color: #108a00;
+    /* margin: 10px 0; */
+}
+.pReRcon{
+    font-size: 14px;
+    font-weight: 600;
+    color: #0b9d37;
+    text-transform: capitalize;
+}
+.projectReDe{
+    font-size: 14px;
+    font-weight: 600;
+    color: #001e00;
+    text-transform: capitalize;
+}
+.proReDetProfile{
+    width: 50px;
+    height: 50px;
+    background-color: #108a00;
+    border-radius: 50%;
+    position: relative;
+}
+.proReDetProfileLogo{
+    font-size: 30px;
+    font-weight: 600;
+    color: #ffffff;
+    text-transform: uppercase;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.proReDetProfileName{
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 1.5;
+    color: #001e00;
+    text-transform: uppercase;
+}
+.proReDetProfilePara{
+    font-size: 14px;
+    font-weight: 400;
+    color: #001e00;
+    text-transform: capitalize;
+}
+.sign{
+    color: #14a800;
+}
+
+/* ======================= About Part Star Here ====================== */
+.aboutRamen{
+    font-size: var(--title_size);
+}
+.aboutPicBox{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.aboutProText{
+    font-size: 15px;
+    line-height: 1.5;
+    font-weight: 600;
+    color: rgb(88, 86, 86);
+}
+.aboutProTextSmall{
+    font-size: 12px;
+    line-height: 1.5;
+    font-weight: 400;
+    color: rgb(88, 86, 86);
+}
+.aboutProLocation{
+    font-size: 14px;
+    line-height: 1.5;
+    font-weight: 500;
+    color: rgb(88, 86, 86, 0.7);
+}
+.aboutViePro{
+    font-size: 14px;
+    line-height: 1.5;
+    font-weight: 600;
+    color: #108a00;
+    margin-bottom: 10px;
+}
+.aboutViePro i{
+    margin-left: 7px;
+}
+.aboutViePro:hover{
+    text-decoration: underline;
+    /* color: #157a08; */
+}
+.whyMeTex{
+    font-size: 14px;
+    line-height: 1.5;
+    font-weight: 500;
+    color: var(--span_color);
+}
+.serviceMain{
+    font-size: 16px;
+    line-height: 3;
+    font-weight: 400;
+}
+.serviceItem{
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 400;
+    list-style-type: disc;
+    /* color: var(--span_color); */
+}
+.bglight{
+    background-color: rgba(181, 216, 181, 0.15);
+    border-radius: 10px;
+}
+.compPro{
+    font-size: 26px;
+    line-height: 3;
+    font-weight: 400;
+}
+.number{
+    width: 30px;
+    height: 30px;
+    border: 2px solid #0b9d37;
+    border-radius: 50%;
+}
+.projectStepTitle{
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.778);
+}
+.projectStepSubTitle{
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.5);
+}
+.projBtn{
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 400;
+    color: #108a00;
+    transition: all linear 0.3s;
+}
+.projBtn:hover{
+    color: #108a00;
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#product{
+    padding: 500px 0;
+}
+
+
+
+
+
+
